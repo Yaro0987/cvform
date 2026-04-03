@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== COMPLETE META PROPERTIES ========== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="CV Form Field · Professional CV Builder" />
+    <meta name="description" content="Create, edit, and manage your professional CV online. Easy-to-use CV builder with dynamic sections for experience, education, skills, and more." />
+    <meta name="keywords" content="CV builder, resume builder, online CV, professional CV, job application, portfolio" />
+    <meta name="author" content="CV Form Field" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cv-form-field.netlify.app/" />
+    <meta property="og:title" content="CV Form Field · Professional CV Builder" />
+    <meta property="og:description" content="Create, edit, and manage your professional CV online. Easy-to-use CV builder with dynamic sections." />
+    <meta property="og:image" content="https://cv-form-field.netlify.app/uploads/cv.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CV Form Field - Professional CV Builder" />
+    <meta property="og:site_name" content="CV Form Field" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://cv-form-field.netlify.app/" />
+    <meta name="twitter:title" content="CV Form Field · Professional CV Builder" />
+    <meta name="twitter:description" content="Create, edit, and manage your professional CV online." />
+    <meta name="twitter:image" content="https://cv-form-field.netlify.app/uploads/cv.jpg" />
+    <meta name="twitter:image:alt" content="CV Form Field - Professional CV Builder" />
+    
+    <!-- LinkedIn Specific Meta Tags -->
+    <meta property="article:author" content="https://cv-form-field.netlify.app/" />
+    
+    <!-- WhatsApp / Telegram Meta Tags -->
+    <meta property="og:whatsapp:image" content="https://cv-form-field.netlify.app/uploads/cv.jpg" />
+    <meta property="og:telegram:image" content="https://cv-form-field.netlify.app/uploads/cv.jpg" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="category" content="Business, Professional, Career" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="target" content="all" />
+    <meta name="rating" content="General" />
+    <meta name="distribution" content="global" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://cv-form-field.netlify.app/" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://cv-form-field.netlify.app/uploads/cv.jpg" />
+    <link rel="apple-touch-icon" href="https://cv-form-field.netlify.app/uploads/cv.jpg" />
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "CV Form Field",
+      "description": "Professional CV Builder Application",
+      "url": "https://cv-form-field.netlify.app/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    
+    <title>CV Form Field · Professional CV Builder</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .retrieve-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .retrieve-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .retrieve-form {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .retrieve-form input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        .retrieve-form button {
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .form-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .form-section {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .form-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .add-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.85rem;
+        }
+
+        .remove-btn {
+            background: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .required {
+            color: red;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skill-item, .education-item, .experience-item, .reference-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .skill-tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-badge {
+            background: #e0e7ff;
+            color: #667eea;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .upload-area {
+            border: 2px dashed #e0e0e0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area:hover {
+            border-color: #667eea;
+            background: #f8f9ff;
+        }
+
+        .upload-area img {
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Popup Modal Styles */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup-container {
+            background: white;
+            border-radius: 20px;
+            max-width: 550px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            animation: popupSlideIn 0.3s ease;
+        }
+
+        @keyframes popupSlideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .popup-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 20px 20px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .popup-header h3 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .close-popup {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .popup-body {
+            padding: 25px;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .info-label {
+            width: 130px;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .info-value {
+            flex: 1;
+            color: #333;
+            word-break: break-word;
+        }
+
+        .popup-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .popup-footer {
+            padding: 20px;
+            border-top: 1px solid #f0f0f0;
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+        }
+
+        .popup-footer button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .confirm-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .cancel-btn {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .dob-input {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px solid #f0f0f0;
+        }
+
+        .dob-input label {
+            font-weight: 600;
+            color: #667eea;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .message {
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .message.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            display: block;
+        }
+
+        .message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .form-card {
+                padding: 20px;
+            }
+            .info-row {
+                flex-direction: column;
+            }
+            .info-label {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                <img src="https://cv-form-field.netlify.app/uploads/cv.jpg" alt="Logo" class="logo" onerror="this.style.display='none'">
+                <span class="material-icons">description</span>
+                CV Collection System
+            </h1>
+            <p>Create or edit your professional CV</p>
+        </div>
+
+        <div class="retrieve-section">
+            <h2>
+                <span class="material-icons">search</span>
+                Retrieve Existing CV
+            </h2>
+            <div class="retrieve-form">
+                <input type="email" id="retrieveEmail" placeholder="Enter your email address">
+                <button onclick="checkCVExists()">
+                    <span class="material-icons">search</span>
+                    Retrieve CV
+                </button>
+            </div>
+        </div>
+
+        <div class="form-card">
+            <div id="message" class="message"></div>
+            
+            <form id="cvForm" enctype="multipart/form-data">
+                <div class="form-section">
+                    <h2>
+                        <span class="material-icons">person</span>
+                        Personal Information
+                    </h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Job Title <span class="required">*</span></label>
+                            <input type="text" id="jobTitle" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Birth Date</label>
+                            <input type="date" id="birthDate">
+                        </div>
+                        <div class="form-group">
+                            <label>Nationality</label>
+                            <input type="text" id="nationality">
+                        </div>
+                        <div class="form-group">
+                            <label>Marital Status</label>
+                            <select id="maritalStatus">
+                                <option value="">Select</option>
+                                <option>Single</option>
+                                <option>Married</option>
+                                <option>Divorced</option>
+                                <option>Widowed</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Profile Photo</label>
+                        <div class="upload-area" onclick="document.getElementById('photoUpload').click()">
+                            <span class="material-icons">cloud_upload</span>
+                            <p>Click to upload passport photo</p>
+                            <input type="file" id="photoUpload" accept="image/*" style="display: none" onchange="previewPhoto(this)">
+                            <img id="photoPreview" style="display: none; max-width: 150px; margin-top: 10px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>
+                        <span class="material-icons">contact_mail</span>
+                        Contact Information
+                    </h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email <span class="required">*</span></label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone <span class="required">*</span></label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Address</label>
+                            <input type="text" id="address">
+                        </div>
+                        <div class="form-group">
+                            <label>City</label>
+                            <input type="text" id="city">
+                        </div>
+                        <div class="form-group">
+                            <label>Country</label>
+                            <input type="text" id="country">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Website/Portfolio</label>
+                            <input type="url" id="website">
+                        </div>
+                        <div class="form-group">
+                            <label>LinkedIn</label>
+                            <input type="url" id="linkedin">
+                        </div>
+                        <div class="form-group">
+                            <label>GitHub</label>
+                            <input type="url" id="github">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>
+                        <span class="material-icons">badge</span>
+                        Professional Profile
+                    </h2>
+                    <div class="form-group">
+                        <label>Profile Description <span class="required">*</span></label>
+                        <textarea id="profileDescription" required placeholder="Write a professional summary about yourself..."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-header">
+                        <h2>
+                            <span class="material-icons">build</span>
+                            Skills
+                        </h2>
+                        <button type="button" class="add-btn" onclick="addSkillCategory()">
+                            <span class="material-icons">add</span>
+                            Add Skill Category
+                        </button>
+                    </div>
+                    <div id="skillsContainer"></div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-header">
+                        <h2>
+                            <span class="material-icons">work</span>
+                            Work Experience
+                        </h2>
+                        <button type="button" class="add-btn" onclick="addExperience()">
+                            <span class="material-icons">add</span>
+                            Add Experience
+                        </button>
+                    </div>
+                    <div id="experienceContainer"></div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-header">
+                        <h2>
+                            <span class="material-icons">school</span>
+                            Education
+                        </h2>
+                        <button type="button" class="add-btn" onclick="addEducation()">
+                            <span class="material-icons">add</span>
+                            Add Education
+                        </button>
+                    </div>
+                    <div id="educationContainer"></div>
+                </div>
+
+                <div class="form-section">
+                    <h2>
+                        <span class="material-icons">translate</span>
+                        Languages
+                    </h2>
+                    <div class="form-group">
+                        <input type="text" id="languages" placeholder="e.g., English, Igbo, French (comma-separated)">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <div class="section-header">
+                        <h2>
+                            <span class="material-icons">diversity_3</span>
+                            References
+                        </h2>
+                        <button type="button" class="add-btn" onclick="addReference()">
+                            <span class="material-icons">add</span>
+                            Add Reference
+                        </button>
+                    </div>
+                    <div id="referencesContainer"></div>
+                </div>
+
+                <button type="submit">
+                    <span class="material-icons">save</span>
+                    Save CV
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="infoPopup" class="popup-overlay">
+        <div class="popup-container">
+            <div class="popup-header">
+                <h3>
+                    <span class="material-icons">info</span>
+                    CV Information Found
+                </h3>
+                <button class="close-popup" onclick="closePopup()">
+                    <span class="material-icons">close</span>
+                </button>
+            </div>
+            <div class="popup-body" id="popupBody">
+                <!-- Dynamic content -->
+            </div>
+            <div class="popup-footer">
+                <button class="cancel-btn" onclick="closePopup()">
+                    <span class="material-icons">cancel</span>
+                    Cancel
+                </button>
+                <button class="confirm-btn" onclick="confirmAndLoad()">
+                    <span class="material-icons">verified</span>
+                    Verify & Load
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let skillCategories = [];
+        let experiences = [];
+        let educations = [];
+        let references = [];
+        let currentPhotoData = null;
+        let pendingCVData = null;
+
+        function addSkillCategory() {
+            const container = document.getElementById('skillsContainer');
+            const index = skillCategories.length;
+            skillCategories.push({ name: '', skills: [] });
+            
+            const div = document.createElement('div');
+            div.className = 'skill-item';
+            div.innerHTML = `
+                <div class="skill-header">
+                    <input type="text" placeholder="Category Name (e.g., Technical Skills, Design)" 
+                           style="flex: 1; margin-right: 10px;" onchange="updateSkillCategoryName(${index}, this.value)">
+                    <button type="button" class="remove-btn" onclick="removeSkillCategory(${index})">
+                        <span class="material-icons">close</span>
+                    </button>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Skills (comma-separated)" onchange="updateSkillCategorySkills(${index}, this.value)">
+                </div>
+                <div class="skill-tags-container" id="skillTags_${index}"></div>
+            `;
+            container.appendChild(div);
+        }
+
+        function updateSkillCategoryName(index, name) {
+            skillCategories[index].name = name;
+        }
+
+        function updateSkillCategorySkills(index, skillsStr) {
+            const skills = skillsStr.split(',').map(s => s.trim()).filter(s => s);
+            skillCategories[index].skills = skills;
+            
+            const tagsContainer = document.getElementById(`skillTags_${index}`);
+            tagsContainer.innerHTML = skills.map(skill => `
+                <span class="skill-badge">
+                    ${escapeHtml(skill)}
+                    <span class="material-icons" style="cursor: pointer; font-size: 0.9rem;" onclick="removeSkill('${index}', '${skill}')">close</span>
+                </span>
+            `).join('');
+        }
+
+        function removeSkill(categoryIndex, skillToRemove) {
+            skillCategories[categoryIndex].skills = skillCategories[categoryIndex].skills.filter(s => s !== skillToRemove);
+            const input = document.querySelector(`#skillsContainer .skill-item:nth-child(${categoryIndex + 1}) input[placeholder*="comma-separated"]`);
+            if (input) input.value = skillCategories[categoryIndex].skills.join(', ');
+            updateSkillCategorySkills(categoryIndex, skillCategories[categoryIndex].skills.join(', '));
+        }
+
+        function removeSkillCategory(index) {
+            skillCategories.splice(index, 1);
+            renderSkills();
+        }
+
+        function renderSkills() {
+            const container = document.getElementById('skillsContainer');
+            container.innerHTML = '';
+            skillCategories.forEach((category, index) => {
+                const div = document.createElement('div');
+                div.className = 'skill-item';
+                div.innerHTML = `
+                    <div class="skill-header">
+                        <input type="text" placeholder="Category Name" value="${escapeHtml(category.name)}" 
+                               style="flex: 1; margin-right: 10px;" onchange="updateSkillCategoryName(${index}, this.value)">
+                        <button type="button" class="remove-btn" onclick="removeSkillCategory(${index})">
+                            <span class="material-icons">close</span>
+                        </button>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Skills (comma-separated)" value="${category.skills.join(', ')}" 
+                               onchange="updateSkillCategorySkills(${index}, this.value)">
+                    </div>
+                    <div class="skill-tags-container" id="skillTags_${index}">
+                        ${category.skills.map(skill => `
+                            <span class="skill-badge">
+                                ${escapeHtml(skill)}
+                                <span class="material-icons" style="cursor: pointer; font-size: 0.9rem;" onclick="removeSkill('${index}', '${skill}')">close</span>
+                            </span>
+                        `).join('')}
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function addExperience() {
+            const container = document.getElementById('experienceContainer');
+            const index = experiences.length;
+            experiences.push({ title: '', company: '', period: '', responsibilities: [] });
+            
+            const div = document.createElement('div');
+            div.className = 'experience-item';
+            div.innerHTML = `
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                    <button type="button" class="remove-btn" onclick="removeExperience(${index})">
+                        <span class="material-icons">close</span>
+                    </button>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Job Title</label>
+                        <input type="text" onchange="updateExperience(${index}, 'title', this.value)">
+                    </div>
+                    <div class="form-group">
+                        <label>Company</label>
+                        <input type="text" onchange="updateExperience(${index}, 'company', this.value)">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Period</label>
+                    <input type="text" placeholder="e.g., JAN 2019 – JUL 2021" onchange="updateExperience(${index}, 'period', this.value)">
+                </div>
+                <div class="form-group">
+                    <label>Responsibilities (one per line)</label>
+                    <textarea rows="4" onchange="updateExperience(${index}, 'responsibilities', this.value.split('\n'))"></textarea>
+                </div>
+            `;
+            container.appendChild(div);
+        }
+
+        function updateExperience(index, field, value) {
+            experiences[index][field] = value;
+        }
+
+        function removeExperience(index) {
+            experiences.splice(index, 1);
+            renderExperiences();
+        }
+
+        function renderExperiences() {
+            const container = document.getElementById('experienceContainer');
+            container.innerHTML = '';
+            experiences.forEach((exp, index) => {
+                const div = document.createElement('div');
+                div.className = 'experience-item';
+                div.innerHTML = `
+                    <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                        <button type="button" class="remove-btn" onclick="removeExperience(${index})">
+                            <span class="material-icons">close</span>
+                        </button>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Job Title</label>
+                            <input type="text" value="${escapeHtml(exp.title)}" onchange="updateExperience(${index}, 'title', this.value)">
+                        </div>
+                        <div class="form-group">
+                            <label>Company</label>
+                            <input type="text" value="${escapeHtml(exp.company)}" onchange="updateExperience(${index}, 'company', this.value)">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Period</label>
+                        <input type="text" value="${escapeHtml(exp.period)}" onchange="updateExperience(${index}, 'period', this.value)">
+                    </div>
+                    <div class="form-group">
+                        <label>Responsibilities (one per line)</label>
+                        <textarea rows="4" onchange="updateExperience(${index}, 'responsibilities', this.value.split('\n'))">${exp.responsibilities.join('\n')}</textarea>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function addEducation() {
+            const container = document.getElementById('educationContainer');
+            const index = educations.length;
+            educations.push({ degree: '', school: '', period: '', details: '' });
+            
+            const div = document.createElement('div');
+            div.className = 'education-item';
+            div.innerHTML = `
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                    <button type="button" class="remove-btn" onclick="removeEducation(${index})">
+                        <span class="material-icons">close</span>
+                    </button>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Degree/Certificate</label>
+                        <input type="text" onchange="updateEducation(${index}, 'degree', this.value)">
+                    </div>
+                    <div class="form-group">
+                        <label>School/University</label>
+                        <input type="text" onchange="updateEducation(${index}, 'school', this.value)">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Period</label>
+                        <input type="text" placeholder="e.g., 2021 - 2025" onchange="updateEducation(${index}, 'period', this.value)">
+                    </div>
+                    <div class="form-group">
+                        <label>Additional Details</label>
+                        <input type="text" placeholder="e.g., CGPA: 3.5/4.0" onchange="updateEducation(${index}, 'details', this.value)">
+                    </div>
+                </div>
+            `;
+            container.appendChild(div);
+        }
+
+        function updateEducation(index, field, value) {
+            educations[index][field] = value;
+        }
+
+        function removeEducation(index) {
+            educations.splice(index, 1);
+            renderEducations();
+        }
+
+        function renderEducations() {
+            const container = document.getElementById('educationContainer');
+            container.innerHTML = '';
+            educations.forEach((edu, index) => {
+                const div = document.createElement('div');
+                div.className = 'education-item';
+                div.innerHTML = `
+                    <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                        <button type="button" class="remove-btn" onclick="removeEducation(${index})">
+                            <span class="material-icons">close</span>
+                        </button>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Degree/Certificate</label>
+                            <input type="text" value="${escapeHtml(edu.degree)}" onchange="updateEducation(${index}, 'degree', this.value)">
+                        </div>
+                        <div class="form-group">
+                            <label>School/University</label>
+                            <input type="text" value="${escapeHtml(edu.school)}" onchange="updateEducation(${index}, 'school', this.value)">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Period</label>
+                            <input type="text" value="${escapeHtml(edu.period)}" onchange="updateEducation(${index}, 'period', this.value)">
+                        </div>
+                        <div class="form-group">
+                            <label>Additional Details</label>
+                            <input type="text" value="${escapeHtml(edu.details)}" onchange="updateEducation(${index}, 'details', this.value)">
+                        </div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function addReference() {
+            const container = document.getElementById('referencesContainer');
+            const index = references.length;
+            references.push({ name: '', title: '', email: '', phone: '' });
+            
+            const div = document.createElement('div');
+            div.className = 'reference-item';
+            div.innerHTML = `
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                    <button type="button" class="remove-btn" onclick="removeReference(${index})">
+                        <span class="material-icons">close</span>
+                    </button>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" onchange="updateReference(${index}, 'name', this.value)">
+                    </div>
+                    <div class="form-group">
+                        <label>Title/Position</label>
+                        <input type="text" onchange="updateReference(${index}, 'title', this.value)">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" onchange="updateReference(${index}, 'email', this.value)">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="text" onchange="updateReference(${index}, 'phone', this.value)">
+                    </div>
+                </div>
+            `;
+            container.appendChild(div);
+        }
+
+        function updateReference(index, field, value) {
+            references[index][field] = value;
+        }
+
+        function removeReference(index) {
+            references.splice(index, 1);
+            renderReferences();
+        }
+
+        function renderReferences() {
+            const container = document.getElementById('referencesContainer');
+            container.innerHTML = '';
+            references.forEach((ref, index) => {
+                const div = document.createElement('div');
+                div.className = 'reference-item';
+                div.innerHTML = `
+                    <div style="display: flex; justify-content: flex-end; margin-bottom: 10px;">
+                        <button type="button" class="remove-btn" onclick="removeReference(${index})">
+                            <span class="material-icons">close</span>
+                        </button>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" value="${escapeHtml(ref.name)}" onchange="updateReference(${index}, 'name', this.value)">
+                        </div>
+                        <div class="form-group">
+                            <label>Title/Position</label>
+                            <input type="text" value="${escapeHtml(ref.title)}" onchange="updateReference(${index}, 'title', this.value)">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" value="${escapeHtml(ref.email)}" onchange="updateReference(${index}, 'email', this.value)">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="text" value="${escapeHtml(ref.phone)}" onchange="updateReference(${index}, 'phone', this.value)">
+                        </div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function previewPhoto(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    currentPhotoData = e.target.result;
+                    const preview = document.getElementById('photoPreview');
+                    preview.src = currentPhotoData;
+                    preview.style.display = 'block';
+                    
+                    // Store in localStorage as base64 for now
+                    // In production, this would be uploaded to server
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function checkCVExists() {
+            const email = document.getElementById('retrieveEmail').value;
+            if (!email) {
+                showMessage('Please enter an email address', 'error');
+                return;
+            }
+            
+            const allCVs = JSON.parse(localStorage.getItem('cv_data') || '[]');
+            const cv = allCVs.find(c => c.contact.email === email);
+            
+            if (!cv) {
+                showMessage('No CV found with this email address. You can create a new one below.', 'error');
+                return;
+            }
+            
+            pendingCVData = cv;
+            showInfoPopup(cv);
+        }
+
+        function showInfoPopup(cv) {
+            const popupBody = document.getElementById('popupBody');
+            const registrationDate = new Date(cv.createdAt).toLocaleDateString();
+            
+            popupBody.innerHTML = `
+                <div class="info-row">
+                    <div class="info-label">Full Name:</div>
+                    <div class="info-value"><strong>${escapeHtml(cv.personal.fullName)}</strong></div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Email:</div>
+                    <div class="info-value">${escapeHtml(cv.contact.email)}</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Address:</div>
+                    <div class="info-value">${escapeHtml(cv.contact.address || 'Not provided')}, ${escapeHtml(cv.contact.city || '')}, ${escapeHtml(cv.contact.country || '')}</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Registration Date:</div>
+                    <div class="info-value">${registrationDate}</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Profile Photo:</div>
+                    <div class="info-value">
+                        ${cv.photo ? `<img src="${cv.photo}" class="popup-photo" alt="Profile Photo">` : '<span class="material-icons" style="color: #999;">person</span> No photo uploaded'}
+                    </div>
+                </div>
+                <div class="dob-input">
+                    <label>
+                        <span class="material-icons">lock</span>
+                        To access and edit this CV, please enter your Date of Birth:
+                    </label>
+                    <input type="date" id="confirmDob" style="margin-top: 10px; width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 8px;">
+                </div>
+            `;
+            
+            document.getElementById('infoPopup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('infoPopup').style.display = 'none';
+            pendingCVData = null;
+        }
+
+        function confirmAndLoad() {
+            const enteredDob = document.getElementById('confirmDob').value;
+            
+            if (!enteredDob) {
+                alert('Please enter your date of birth to verify your identity.');
+                return;
+            }
+            
+            if (enteredDob !== pendingCVData.personal.birthDate) {
+                alert('Date of birth does not match our records. Access denied.');
+                closePopup();
+                return;
+            }
+            
+            loadCVData(pendingCVData);
+            closePopup();
+            showMessage('CV loaded successfully! You can now edit your information.', 'success');
+        }
+
+        function loadCVData(cv) {
+            document.getElementById('fullName').value = cv.personal.fullName || '';
+            document.getElementById('jobTitle').value = cv.personal.jobTitle || '';
+            document.getElementById('birthDate').value = cv.personal.birthDate || '';
+            document.getElementById('nationality').value = cv.personal.nationality || '';
+            document.getElementById('maritalStatus').value = cv.personal.maritalStatus || '';
+            
+            document.getElementById('email').value = cv.contact.email || '';
+            document.getElementById('phone').value = cv.contact.phone || '';
+            document.getElementById('address').value = cv.contact.address || '';
+            document.getElementById('city').value = cv.contact.city || '';
+            document.getElementById('country').value = cv.contact.country || '';
+            document.getElementById('website').value = cv.contact.website || '';
+            document.getElementById('linkedin').value = cv.contact.linkedin || '';
+            document.getElementById('github').value = cv.contact.github || '';
+            
+            document.getElementById('profileDescription').value = cv.profile.description || '';
+            
+            skillCategories = cv.skills || [];
+            renderSkills();
+            
+            experiences = cv.experiences || [];
+            renderExperiences();
+            
+            educations = cv.educations || [];
+            renderEducations();
+            
+            document.getElementById('languages').value = (cv.languages || []).join(', ');
+            
+            references = cv.references || [];
+            renderReferences();
+            
+            if (cv.photo) {
+                currentPhotoData = cv.photo;
+                const preview = document.getElementById('photoPreview');
+                preview.src = currentPhotoData;
+                preview.style.display = 'block';
+            }
+        }
+
+        function showMessage(msg, type) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = msg;
+            messageDiv.className = `message ${type}`;
+            setTimeout(() => {
+                messageDiv.className = 'message';
+            }, 5000);
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        document.getElementById('cvForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const cvData = {
+                id: Date.now(),
+                personal: {
+                    fullName: document.getElementById('fullName').value,
+                    jobTitle: document.getElementById('jobTitle').value,
+                    birthDate: document.getElementById('birthDate').value,
+                    nationality: document.getElementById('nationality').value,
+                    maritalStatus: document.getElementById('maritalStatus').value
+                },
+                contact: {
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    address: document.getElementById('address').value,
+                    city: document.getElementById('city').value,
+                    country: document.getElementById('country').value,
+                    website: document.getElementById('website').value,
+                    linkedin: document.getElementById('linkedin').value,
+                    github: document.getElementById('github').value
+                },
+                profile: {
+                    description: document.getElementById('profileDescription').value
+                },
+                skills: skillCategories,
+                experiences: experiences,
+                educations: educations,
+                languages: document.getElementById('languages').value.split(',').map(l => l.trim()).filter(l => l),
+                references: references,
+                photo: currentPhotoData,
+                createdAt: new Date().toISOString()
+            };
+            
+            if (!cvData.personal.fullName || !cvData.personal.jobTitle || !cvData.contact.email || !cvData.contact.phone || !cvData.profile.description) {
+                showMessage('Please fill in all required fields (*)', 'error');
+                return;
+            }
+            
+            let allCVs = JSON.parse(localStorage.getItem('cv_data') || '[]');
+            const existingIndex = allCVs.findIndex(cv => cv.contact.email === cvData.contact.email);
+            
+            if (existingIndex !== -1) {
+                cvData.id = allCVs[existingIndex].id;
+                cvData.createdAt = allCVs[existingIndex].createdAt;
+                allCVs[existingIndex] = cvData;
+                showMessage('CV updated successfully!', 'success');
+            } else {
+                allCVs.push(cvData);
+                showMessage('New CV saved successfully!', 'success');
+            }
+            
+            localStorage.setItem('cv_data', JSON.stringify(allCVs));
+            
+            if (existingIndex === -1) {
+                document.getElementById('cvForm').reset();
+                skillCategories = [];
+                experiences = [];
+                educations = [];
+                references = [];
+                renderSkills();
+                renderExperiences();
+                renderEducations();
+                renderReferences();
+                currentPhotoData = null;
+                document.getElementById('photoPreview').style.display = 'none';
+                document.getElementById('photoPreview').src = '';
+            }
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        addSkillCategory();
+        addExperience();
+        addEducation();
+        addReference();
+    </script>
+</body>
+</html>
